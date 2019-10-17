@@ -12,9 +12,9 @@ int main(void)
     scanf("%d",&n);
 
     if (is_palindromic_number(n))
-	printf("is a palindromic number\n");
+        printf("is a palindromic number\n");
     else
- 	printf("is not a palindromic number\n");
+        printf("is not a palindromic number\n");
 
     return 0;
 }
