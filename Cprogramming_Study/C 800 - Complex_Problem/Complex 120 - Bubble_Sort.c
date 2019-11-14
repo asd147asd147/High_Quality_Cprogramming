@@ -1,53 +1,42 @@
 #include <stdio.h>
 
-// print a Square Matrix M of order n
-void print_nxn(int n, double M[n][n]) {
-    int row, col;
-    for (row=0; row<n; row++) {
-	printf("    [ ");
-	for (col=0; col<n; col++)
-	    printf("%6.2lf ", M[row][col]);
-	printf("]\n");
+void print_array(int n, int* array){
+    int i;
+    int *ptr = array;
+    for(i = 0; i < n; i++){
+        printf("%d ",*ptr);
+        ptr = ptr + 1; // ptr++
     }
 }
 
-// Compute the determinant of a Square Matrix M of order n
-
-double determinant(int n, double M[n][n]) {
-    double det=1, ratio;
-    int i,j,k;
-    for(i=0;i<n;i++){
-    	for(j=0;j<n;j++){
-    		if(j>i){
-    			ratio = M[j][i]/M[i][i];
-    			for(k=0;k<n;k++){
-    				M[j][k]-=ratio*M[i][k];
-				}
-			}
-		}
-	}
-	for(i=0;i<n;i++){
-		det*=M[i][i];
-	}
-	return det;
+void swap(int* a, int* b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
+void bubble_sort(int n, int num[]){
+    int i,j;
+    for(i = 0; i < n-1; i++){
+        for(j = 0; j < n-1; j++){
+            if(num[j] > num[j+1]){
+                swap(&num[j],&num[j+1]);
+            }
+        }
+    }
+}
+
+
 int main(void) {
-    double M1[3][3] = { {1.7, 3.2, 2.5},
-			{2.3, 4.1, 0.7},
-			{1.0, 2.0, 3.0} };
-    double M2[4][4] = { {2.0, 1.0, 2.0, 1.0},
-    		        {1.7, 3.2, 2.5, 3.0},
-			{2.3, 4.1, 0.7, 2.0},
-			{1.0, 2.0, 3.0, 4.0} };
 
-    printf("Matrix M1 = \n");
-    print_nxn(3, M1);
-    printf("det(M1) = %lf\n", determinant(3, M1));
+    int num[10] = {4, 3, 7, 9, 10, 2, 5, 1, 8, 6};
+    printf("\nBefore sort\n");
+    print_array(sizeof(num)/sizeof(int),num);
 
-    printf("Matrix M2 = \n");
-    print_nxn(4, M2);
-    printf("det(M2) = %lf\n", determinant(4, M2));
+    bubble_sort(sizeof(num)/sizeof(int),num);
+    printf("\nAfter sort\n");
+    print_array(sizeof(num)/sizeof(int),num);
 
     return 0;
 }
