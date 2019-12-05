@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html  dir="ltr" lang="ko" xml:lang="ko">
+<head>
+    <title>PLMS</title>
+    <link rel="shortcut icon" href="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme/1567140730/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, [Final-B:90]" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/plms.pusan.ac.kr","sesskey":"8NIasaD7Fe","loadingicon":"http:\/\/plms.pusan.ac.kr\/theme\/image.php\/coursemosv2\/core\/1567140730\/i\/loading_small","themerev":"1567140730","slasharguments":1,"theme":"coursemosv2","jsrev":"1567140730","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?m\/1567140730\/","combine":true,"comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"m\/1567140730\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_coursemosvimeo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/plms.pusan.ac.kr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/plms.pusan.ac.kr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1567140730\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_question_flags":{"name":"core_question_flags","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"mathjax":{"name":"mathjax","fullpath":"http:\/\/cdn.mathjax.org\/mathjax\/2.5-latest\/MathJax.js?delayStartupUntil=configured"},"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://plms.pusan.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script type="text/javascript" src="http://plms.pusan.ac.kr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1567140730/mcore-min.js"></script><script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/core/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/core/ui-1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.methods.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.tableHeadFixer.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.sortable.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/moment.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/fullcalendar.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/gcal.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.filedownload.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/timer.jquery.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.ambiance.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.validate.ko.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/bootstrap-datepicker.kr.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/fullcalendar/ko.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/jquery.php/theme_coursemosv2/jquery.headroom.min.js"></script>
+<script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://plms.pusan.ac.kr/theme/styles.php/coursemosv2/1567140730/all" />
+<script type="text/javascript" src="http://plms.pusan.ac.kr/lib/javascript.php/1567140730/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/javascript.php/coursemosv2/1567140730/head"></script>
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="부산대학교 온라인 학습관리시스템(PLMS)" />
+<meta property="og:description" content="PNU Learning Management System" />
+<meta property="og:image" content="null" />
+<meta property="og:url" content="http://plms.pusan.ac.kr" />
+<script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/code.coursemos.co.kr/flexiblepage.js?v=0.09"></script>    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui" />
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+		theme_coursemosv2.lang = 'ko';
+    </script>
+</head>
+
+<body  id="page-mod-quiz-review" class="format-ubsweeks  path-mod path-mod-quiz safari dir-ltr lang-ko yui-skin-sam yui3-skin-sam plms-pusan-ac-kr pagelayout-incourse course-71212 context-479631 cmid-226528 category-37 coursemos-layout-course page-xs has-region-side-pre used-region-side-pre has-region-side-post empty-region-side-post side-pre-only">
+	<div class="skiplinks"><a class="skip" href="#maincontent">주 내용으로 가기</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+	<div id="page" class="">
+		<div id="page-header">
+			<nav class="navbar navbar-default navbar-fixed-top headroom">
+	<div class="container-fluid">
+		<div class="navbar-brand">
+			<a href="http://plms.pusan.ac.kr" class="logo"><span class="sr-only">CyberCampus</span></a>
+		</div>
+		
+		<div class="usermenu">
+		<ul class="nav nav-pills" role="tablist"><li class="user_department hidden-xs">최원준</li><li class="user-info-menu"><a class="user-info-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/u/f2" alt="최원준 사진" class="userpicture" /></a><div class="user-info-box popover-box"><div class="dropdown dropdown-lang"><a id="user-info-lang" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/flag/ko" alt="" />&nbsp;&nbsp;한국어 (ko) <span class="caret"></span> </a><ul class="dropdown-menu" aria-labelledby="user-info-lang"><li><a href="http://plms.pusan.ac.kr/mod/quiz/review.php?attempt=255135&amp;lang=en" title="English (en)" class="a-lang" data-lang="en"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/flag/en" alt="en" class="lang_flag" /> English (en)</a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/review.php?attempt=255135&amp;lang=ko" title="한국어 (ko)" class="a-lang" data-lang="ko"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/flag/ko" alt="ko" class="lang_flag" /> 한국어 (ko)</a></li><li><a href="http://plms.pusan.ac.kr/mod/quiz/review.php?attempt=255135&amp;lang=zh_cn" title="简体中文 (zh_cn)" class="a-lang" data-lang="zh_cn"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/flag/zh_cn" alt="zh_cn" class="lang_flag" /> 简体中文 (zh_cn)</a></li></ul></div><div class="user-info-picture"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/u/f1" alt="최원준 사진" class="userpicture" /><h4>최원준</h4><p class="department">전기컴퓨터공학부</p></div><ul class="user-info-submenu clearfix"><li class="items"><a href="http://plms.pusan.ac.kr/user/edit.php?id=77481">개인정보 수정</a></li><li class="items"><a href="http://plms.pusan.ac.kr/login/logout.php?sesskey=8NIasaD7Fe">로그아웃</a></li></ul><ul class="user-info-shortcut"></ul></div></li><li class="user-courses"><a class="user-courses-popover icon-a" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-my"></div></a><div class="user-courses-box popover-box"><div class="popover-header">진행중인 강좌 (0)</div><ul class="my-course-lists"><li class="nocourses">Loading...</li></ul><div class="popover-footer"><a href="http://plms.pusan.ac.kr">MY COURSES</a></div></div></li><li class="user-notification"><a class="icon-a user-noti-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-noti"></div></a><div class="user-noti-box popover-box"><div class="popover-header"><span>전체 알림</span> <img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/layout/popover-icon" alt="" class="gear" /></div><div class="user-noti-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="http://plms.pusan.ac.kr/local/ubnotification/">모두 보기</a></div></div></li><li class="user-message"><a class="icon-a user-message-popover" tabindex="0" role="button" data-toggle="popover" data-placement="bottom"><div class="icon icon-msg"></div></a><div class="user-message-box popover-box"><div class="popover-header">대화 <img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/layout/popover-icon" alt="" class="gear" /></div><div class="user-message-lists"><div class="nomessage">Loading...</div></div><div class="popover-footer"><a href="#" class="btn-allread-message">모두 읽음으로 표시</a><span class="popover-bar">&nbsp;</span><a href="http://plms.pusan.ac.kr/local/ubmessage/">전체보기</a></div></div></li><li class="user-product"><a class="user-menu-product icon-a" tabindex="0" role="button" data-toggle="popover"><div class="icon icon-menu"></div></a><div class="hide menu-product"><div class="menu-product-itl"><h5>교수학습지원 안내 <a href="http://ctl.pusan.ac.kr/"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/layout/itl_home" alt="" /></a></h5><ul><li><a href="http://ctl.pusan.ac.kr/" target="_blank">교수학습지원센터</a></li><li><a href="http://web.pptworld.co.kr/pusan" target="_blank">무료PPT템플릿</a></li><li><a href="http://www.kmooc.kr/school/PNUk" target="_blank">MOOC</a></li><li><a href="http://www.kocw.net/" target="_blank">KOCW</a></li><li><a href="http://oer.pusan.ac.kr/auth/checkAuth" target="_blank">효원지식나눔터</a></li></ul></div><div class="menu-product-family"><h5>학교 서비스</h5><div class="container-fluid"><div class="row"><div class="col-xs-7"><a href="http://icert.pusan.ac.kr/" target="_blank">인터넷증명발급</a></div><div class="col-xs-5"><a href="http://lib.pusan.ac.kr/" target="_blank">도서관</a></div><div class="col-xs-7"><a href="http://hrd.pusan.ac.kr/">취업전략과</a></div><div class="col-xs-5"><a href="https://e-onestop.pusan.ac.kr/">학생지원시스템</a></div></div></div></div></div></li><li class="active user-login user-logout hidden-xs"><a href="http://plms.pusan.ac.kr/login/logout.php?sesskey=8NIasaD7Fe" class="btn btn-person">로그아웃</a></li></ul>		</div>
+		
+		<div class="coursename"><h1><a href="http://plms.pusan.ac.kr/course/view.php?id=71212">기초컴퓨터프로그래밍 (007)</a></h1></div>	</div>
+</nav>		</div>
+		
+		<div id="page-lnb">
+			<ul class="left-menus">
+	<li class=""><a href="http://plms.pusan.ac.kr" class="left-menu-link left-menu-link-mypage" title="My Page" data-toggle="tooltip" data-placement="right" ><h5 class="">My Page</h5></a><ul><li class=""><a href="http://plms.pusan.ac.kr" title="">Dashboard</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/my.php" title="">진행강좌 공지</a></li><li class=""><a href="http://plms.pusan.ac.kr/user/edit.php?id=77481" title="">개인정보 수정</a></li></ul></li><li class=""><a href="http://plms.pusan.ac.kr" class="left-menu-link left-menu-link-mycourses" title="교과과정" data-toggle="tooltip" data-placement="right" ><h5 class="">교과과정</h5></a><ul><li class=""><a href="http://plms.pusan.ac.kr/local/ubion/user/" title="">나의 강좌</a></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubassistant/" title="">조교/청강생 신청</a></li></ul></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubassistant/irregular.php" class="left-menu-link left-menu-link-irregular" title="비정규강좌" data-toggle="tooltip" data-placement="right" ><h5 class="nosubmenu">비정규강좌</h5></a></li><li class=""><a href="http://oer.pusan.ac.kr/auth/checkAuth" class="left-menu-link left-menu-link-oer" title="OER 지식나눔시스템" data-toggle="tooltip" data-placement="right"  target="_blank"><h5 class="nosubmenu">OER 지식나눔시스템</h5></a></li><li class=""><a href="http://plms.pusan.ac.kr/local/ubmanual/" class="left-menu-link left-menu-link-manual" title="매뉴얼" data-toggle="tooltip" data-placement="right" ><h5 class="nosubmenu">매뉴얼</h5></a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=1" class="left-menu-link left-menu-link-guide" title="이용안내" data-toggle="tooltip" data-placement="right" ><h5 class="">이용안내</h5></a><ul><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=1" title="">공지사항</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=2" title="">Q&A</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=3" title="">FAQ</a></li><li class=""><a href="http://plms.pusan.ac.kr/mod/ubboard/view.php?id=4" title="">자료실</a></li></ul></li></ul>
+<div class="itl_info">
+	<h5>PLMS 사용문의</h5>
+	<div class="itl_desc">
+		<p class="tell">051-510-3843</p>
+		<p class="email">plms@pusan.ac.kr</p>
+		<p class="name">교수학습지원센터</p>
+	</div>
+</div>		</div>
+		<div id="page-mask">
+						<div id="page-container" class="">
+				<div id="page-submenu">
+	<div id="coursemos-course-menu">
+		<ul class="course-menus">
+			<li>
+	<div class="block block-coursemos block-coursehome "  data-name="coursehome">
+		<div class="header">
+			<div class="block_action">
+				<img class="block-hider-hide" alt="블록 숨기기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/t/switch_minus" title="블록 숨기기" />
+				<img class="block-hider-show" alt="블록 보이기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/t/switch_plus" title="블록 보이기" />
+			</div>
+			<h2><a href="http://plms.pusan.ac.kr/course/view.php?id=71212">강의실 홈</a></h2>
+		</div>
+		<div class="content">
+						<ul class="topmenu">
+				<li class="expand"><a href="#" title="강의정보" class="" >강의정보 <span class="caret"></span></a><ul><li><a href="http://e-onestop.pusan.ac.kr/menu/curriculum/B06/B06002?year=2018&term=20&sub_cd=ZE10100&class_num=007&grad_div=01&prof_cd=&lang_gbn=" title="강의계획서" class="submenu-syllabus "  target="_blank">강의계획서</a></li></ul></li><li class="expand"><a href="#" title="성적/출석관리" class="" >성적/출석관리 <span class="caret"></span></a><ul><li><a href="http://plms.pusan.ac.kr/report/ubcompletion/progress.php?id=71212" title="온라인출석부" class="submenu-progress " >온라인출석부</a></li><li><a href="http://plms.pusan.ac.kr/local/ubattendance/index.php?id=71212" title="오프라인출석부" class="submenu-attendance " >오프라인출석부</a></li><li><a href="http://plms.pusan.ac.kr/grade/report/user/index.php?id=71212" title="성적부" class="submenu-grade " >성적부</a></li></ul></li><li class="expand"><a href="#" title="수강생 알림" class="" >수강생 알림 <span class="caret"></span></a><ul><li><a href="http://plms.pusan.ac.kr/local/ubmessage/send.php?id=71212" title="쪽지 보내기" class="submenu-message " >쪽지 보내기</a></li></ul></li><li class=""><a href="#" title="기타 관리" class="" >기타 관리 <span class="caret"></span></a><ul><li><a href="http://plms.pusan.ac.kr/local/ubcommunication/group/user_group.php?id=71212" title="팀원" class="submenu-group_member " >팀원</a></li></ul></li>			</ul>
+			
+					</div>
+	</div>
+</li>
+	<li>
+		<div class="block block-coursemos block-quick-mod "  data-name="quick-mod">
+			<div class="header">
+				<div class="block_action">
+					<img class="block-hider-hide" alt="블록 숨기기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/t/switch_minus" title="블록 숨기기" />
+					<img class="block-hider-show" alt="블록 보이기" src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/t/switch_plus" title="블록 보이기" />
+				</div>
+				<h2>학습활동</h2>
+			</div>
+			<div class="content">
+				<ul class="add_activities">
+					<li><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/ubboard/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/ubboard/index.php?id=71212">게시판</a></li><li><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/assign/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/assign/index.php?id=71212">과제</a></li><li><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/vod/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/vod/index.php?id=71212">동영상</a></li><li class="extra_modules"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/url/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/url/index.php?id=71212">URL링크</a></li><li class="extra_modules"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/quiz/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/quiz/index.php?id=71212">퀴즈</a></li><li class="extra_modules"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/ubpeer/1567140730/icon" alt="" class="moduleicon" /> <a href="http://plms.pusan.ac.kr/mod/ubpeer/index.php?id=71212">팀플평가</a></li>				</ul>
+							</div>
+		</div>
+	</li>
+			</ul>
+		<aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="skip-block">문항 선택 생략</a><div class="block block_fake" id="mod_quiz_navblock" data-block="_fake"><div class="header"><div class="title"><div class="block_action"></div><h2>문항 선택</h2></div></div><div class="content"><div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton complete free thispage" id="quiznavbutton1" title="풀이 완료" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>1<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton2" title="풀이 완료" data-quiz-page="0" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>2<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton3" title="풀이 완료" data-quiz-page="0" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>3<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton4" title="풀이 완료" data-quiz-page="0" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>4<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton5" title="풀이 완료" data-quiz-page="0" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>5<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton6" title="풀이 완료" data-quiz-page="0" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>6<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a><a class="qnbutton complete free thispage" id="quiznavbutton7" title="답하지 않음" data-quiz-page="0" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">문제</span>7<span class="accesshide"> 이 페이지에서 <span class="flagstate"></span></span></a></div><div class="othernav"><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=226528">검토 완료</a></div></div></div><span id="sb-1" class="skip-block-to"></span></aside>        <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"></aside>	</div>
+	
+</div>
+				
+				
+				<div id="page-content" class="clearfix">
+					<div id="page-content-wrap">
+						<div class="page-content-navigation"><ol class=breadcrumb><li class="breadcrumb-home"><a href="http://plms.pusan.ac.kr"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/layout/course-home" alt="HOME" /></a></li><li><a title="기초컴퓨터프로그래밍" href="http://plms.pusan.ac.kr/course/view.php?id=71212">기초컴퓨터프로그래밍</a></li><li><a title="퀴즈" href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=226528">[Final-B:90]</a></li></ol></div>						<div id="region-main">
+							<div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">시작 일시</th><td class="cell">2018-12-17, 20:46:46</td></tr><tr><th class="cell" scope="row">진행 상황</th><td class="cell">종료됨</td></tr><tr><th class="cell" scope="row">완료 일시</th><td class="cell">2018-12-17, 21:52:02</td></tr><tr><th class="cell" scope="row">소요시간</th><td class="cell">1 시간 5 분</td></tr><tr><th class="cell" scope="row">성적</th><td class="cell">최고 90.00점 중 <b>75.00</b>점 (<b>83</b>%)</td></tr></tbody></table><form action="http://plms.pusan.ac.kr/mod/quiz/review.php?attempt=255135" method="post" class="questionflagsaveform"><div><div id="q1" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">1</span></h3><div class="state">풀이 완료</div><div class="grade">총 10.00 점에서 10.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:1_:flagged" value="0" /><input type="checkbox" id="q270328:1_:flaggedcheckbox" name="q270328:1_:flagged" value="1" /><input type="hidden" value="qaid=1702039&amp;qubaid=270328&amp;qid=279137&amp;slot=1&amp;checksum=bfe5f2f6eb4c60e57725f43591c6d872&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:1_:flaggedlabel" for="q270328:1_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:1_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:1_:sequencecheck" value="4" /><div class="qtext"><p>Complete the reverse_array() function in the source code below properly so that we can get the following execution result.</p><p>Submit only the source code of your reverse_array() function.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">Execution Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="font-family:Consolas;">
+  1.10,   3.30,   5.50,   2.20,   6.60,   4.40<br>
+After Reverse<br>
+  4.40,   6.60,   2.20,   5.50,   3.30,   1.10<br>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;">#include &lt;stdio.h&gt; 
+void print_array(int n, double da[]) {
+    int i;
+    for (i=0; i&lt;n-1; i++)
+	printf("%6.2f, ", da[i]);
+    printf("%6.2f\n", da[i]);
+}
+<b style="color:rgb(0,0,255);font-family:Consolas;">
+void reverse_array(int n, double da[]) {
+    // Enter your code
+}</b>
+
+int main(void) {
+    double vec1[] = {1.1,3.3,5.5,2.2,6.6,4.4};
+
+    print_array(sizeof(vec1)/sizeof(double), vec1);
+
+    reverse_array(sizeof(vec1)/sizeof(double), vec1);
+
+    printf("After Reverse\n");
+    print_array(sizeof(vec1)/sizeof(double), vec1);
+
+    return 0;
+}
+</pre></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="30" cols="60">#include &lt;stdio.h&gt; 
+void print_array(int n, double da[]) {
+    int i;
+    for (i=0; i&lt;n-1; i++)
+		printf(&quot;%6.2f, &quot;, da[i]);
+    printf(&quot;%6.2f\n&quot;, da[i]);
+}
+
+void reverse_array(int n, double da[]) {
+    int i;
+	double temp;
+    for(i=0;i&lt;n/2;i++){
+    	temp = da[i];
+    	da[i]=da[n-1-i];
+    	da[n-1-i]=temp;
+	}
+}
+
+int main(void) {
+    double vec1[] = {1.1,3.3,5.5,2.2,6.6,4.4};
+
+    print_array(sizeof(vec1)/sizeof(double), vec1);
+
+    reverse_array(sizeof(vec1)/sizeof(double), vec1);
+
+    printf(&quot;After Reverse\n&quot;);
+    print_array(sizeof(vec1)/sizeof(double), vec1);
+
+    return 0;
+}</textarea></div><div class="attachments"></div></div></div></div></div><div id="q2" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">2</span></h3><div class="state">풀이 완료</div><div class="grade">총 10.00 점에서 10.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:2_:flagged" value="0" /><input type="checkbox" id="q270328:2_:flaggedcheckbox" name="q270328:2_:flagged" value="1" /><input type="hidden" value="qaid=1702040&amp;qubaid=270328&amp;qid=279138&amp;slot=2&amp;checksum=634525e509d3e1045e9c1454d821d26b&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:2_:flaggedlabel" for="q270328:2_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:2_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:2_:sequencecheck" value="4" /><div class="qtext"><p>Complete the swap() and the main() functions in the source code below to swap values of two variables, a and b.</p>
+<table>
+<thead>
+<tr>
+<th scope="col">Execution Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="font-family:Consolas;">
+a: 10 and b: 20<br>
+After swap()<br>
+a: 20 and b: 10<br>
+</td>
+</tr>
+</tbody>
+</table>
+<pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;"><br>#include &lt;stdio.h&gt; 
+<b style="color:rgb(0,0,255);font-family:Consolas;">void swap(// define parameters properly   )
+{
+}
+</b>
+int main(void)
+{
+    int a = 10, b = 20;
+
+    printf("a: %d and b: %d\n", a, b);
+
+<b style="color:rgb(0,0,255);font-family:Consolas;">    swap(// write parameters properly);</b>
+    printf("After swap()\n");
+    printf("a: %d and b: %d\n", a, b);
+    return 0;
+}
+</pre></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="30" cols="60">
+#include &lt;stdio.h&gt; 
+void swap(int *a, int *b  )
+{
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+int main(void)
+{
+    int a = 10, b = 20;
+
+    printf(&quot;a: %d and b: %d\n&quot;, a, b);
+
+    swap(&amp;a,&amp;b);
+    printf(&quot;After swap()\n&quot;);
+    printf(&quot;a: %d and b: %d\n&quot;, a, b);
+    return 0;
+}</textarea></div><div class="attachments"></div></div></div></div></div><div id="q3" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">3</span></h3><div class="state">풀이 완료</div><div class="grade">총 15.00 점에서 15.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:3_:flagged" value="0" /><input type="checkbox" id="q270328:3_:flaggedcheckbox" name="q270328:3_:flagged" value="1" /><input type="hidden" value="qaid=1702041&amp;qubaid=270328&amp;qid=279139&amp;slot=3&amp;checksum=194f5a6b33afbbde60c4d97e769e43a5&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:3_:flaggedlabel" for="q270328:3_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:3_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:3_:sequencecheck" value="4" /><div class="qtext"><p>Complete the following program to get the following execution result.</p><p>You should complete two functions, distance1() and distance2(). both return the distance between two points.</p><p></p><ul><li>These two functions are different from each other in their parameter type.</li><li>You can use any standard library functions declared in &lt;math.h&gt; such as sqrt() to compute distance.</li></ul><p></p><p>Submit only your distance1() and distance2() functions for your answer.</p><p><br></p>
+<table>
+<thead>
+<tr>
+<th scope="col">Execution Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="font-family:Consolas;">
+The distance between (p1,p2) = 3.354102<br>
+The distance between (p1,p2) = 3.354102
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;">#include &lt;stdio.h&gt; 
+#include &lt;math.h&gt;
+
+typedef struct st_point {
+	double x;
+	double y;
+} tpoint;
+
+<b style="color:rgb(0,0,255);font-family:Consolas;">
+double distance1(tpoint p1, tpoint p2) {
+    // Enter your code here
+}
+
+double distance2(tpoint *pp1, tpoint *pp2) {
+    // Enter your code here
+}
+</b>
+int main(void) 
+{
+	tpoint p1 = {1.0, 3.0}, p2 = {-2.0, 4.5};
+
+	printf("The distance between (p1,p2) = %lf\n", distance1(p1,p2));
+	printf("The distance between (p1,p2) = %lf\n", distance2(&amp;p1,&amp;p2));
+
+	return 0;
+}
+</pre></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="40" cols="60">#include &lt;stdio.h&gt; 
+#include &lt;math.h&gt;
+
+typedef struct st_point {
+	double x;
+	double y;
+} tpoint;
+
+
+double distance1(tpoint p1, tpoint p2) {
+    return sqrt(pow((p1.x)-(p2.x),2)+pow((p1.y)-(p2.y),2));
+}
+
+double distance2(tpoint *pp1, tpoint *pp2) {
+    return sqrt(pow((pp1-&gt;x)-(pp2-&gt;x),2)+pow((pp1-&gt;y)-(pp2-&gt;y),2));;
+}
+
+int main(void) 
+{
+	tpoint p1 = {1.0, 3.0}, p2 = {-2.0, 4.5};
+
+	printf(&quot;The distance between (p1,p2) = %lf\n&quot;, distance1(p1,p2));
+	printf(&quot;The distance between (p1,p2) = %lf\n&quot;, distance2(&amp;p1,&amp;p2));
+
+	return 0;
+}</textarea></div><div class="attachments"></div></div></div></div></div><div id="q4" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">4</span></h3><div class="state">풀이 완료</div><div class="grade">총 10.00 점에서 10.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:4_:flagged" value="0" /><input type="checkbox" id="q270328:4_:flaggedcheckbox" name="q270328:4_:flagged" value="1" /><input type="hidden" value="qaid=1702042&amp;qubaid=270328&amp;qid=279140&amp;slot=4&amp;checksum=11026698dbb37f722c1aeaac044dba46&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:4_:flaggedlabel" for="q270328:4_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:4_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:4_:sequencecheck" value="4" /><div class="qtext"><p>Complete the following program to get the following execution result.</p><ul><li>point_swap() is a function that swaps values of two tpoint variables.<br></li><li>Define parameters of point_swap() properly.</li><li>Fill in [1] in main() properly which calls the point_swap().</li></ul><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">Submit only your code for your answer.</span><br></p><table style="background-color: white;"><thead><tr><th scope="col">Execution Result</th></tr></thead><tbody><tr><td style="font-family:Consolas;">
+P1 = &lt;1.00,2.00&gt;, P2 = &lt;3.00,4.00&gt;<br>
+P1 = &lt;3.00,4.00&gt;, P2 = &lt;1.00,2.00&gt;&nbsp;</td></tr></tbody></table>
+<p></p>
+<pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;">#include &lt;stdio.h&gt; 
+
+typedef struct st_point {
+	double x;
+	double y;
+} tpoint;
+
+<b style="color:rgb(0,0,255);font-family:Consolas;">
+void point_swap([2 - define parameters properly]) {
+    // Enter your code
+}
+</b>
+int main(void) 
+{
+	tpoint p1 = {1.0, 2.0}, p2 = {3.0, 4.0};
+
+	printf("P1 = &lt;%.2lf,%.2lf&gt;, P2 = &lt;%.2lf,%.2lf&gt;\n",
+		p1.x, p1.y, p2.x, p2.y);
+
+	point_swap(<b style="color:rgb(0,0,255);font-family:Consolas;">[1]</b>);
+
+	printf("P1 = &lt;%.2lf,%.2lf&gt;, P2 = &lt;%.2lf,%.2lf&gt;\n",
+		p1.x, p1.y, p2.x, p2.y);
+
+	return 0;
+}
+</pre></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="40" cols="60">#include &lt;stdio.h&gt; 
+
+typedef struct st_point {
+	double x;
+	double y;
+} tpoint;
+
+
+void point_swap(tpoint *pp1, tpoint *pp2) {
+    tpoint temp;
+    temp = *pp1;
+    *pp1 = *pp2;
+    *pp2 = temp;
+}
+
+int main(void) 
+{
+	tpoint p1 = {1.0, 2.0}, p2 = {3.0, 4.0};
+
+	printf(&quot;P1 = &lt;%.2lf,%.2lf&gt;, P2 = &lt;%.2lf,%.2lf&gt;\n&quot;,
+		p1.x, p1.y, p2.x, p2.y);
+
+	point_swap(&amp;p1,&amp;p2);
+
+	printf(&quot;P1 = &lt;%.2lf,%.2lf&gt;, P2 = &lt;%.2lf,%.2lf&gt;\n&quot;,
+		p1.x, p1.y, p2.x, p2.y);
+
+	return 0;
+}
+</textarea></div><div class="attachments"></div></div></div></div></div><div id="q5" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">5</span></h3><div class="state">풀이 완료</div><div class="grade">총 15.00 점에서 15.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:5_:flagged" value="0" /><input type="checkbox" id="q270328:5_:flaggedcheckbox" name="q270328:5_:flagged" value="1" /><input type="hidden" value="qaid=1702043&amp;qubaid=270328&amp;qid=279141&amp;slot=5&amp;checksum=45c6d1d1a8dcbb574c7333de4d47c14f&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:5_:flaggedlabel" for="q270328:5_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:5_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:5_:sequencecheck" value="4" /><div class="qtext"><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">Write a program that does the followings.</span><br></p><p></p><ol><li>Get an integer number from user input. let it be "n"</li><li>Get integer numbers as many as "n" from user input&nbsp;</li><li>Print out those integer numbers <b>in the reverse order of the input</b></li><li>You should use dynamic memory allocation to store integer numbers from user input<br>That is, your program should use "malloc()" and "free()" .&nbsp;</li></ol><p></p><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">For students who are hard to understand the above problem written in English.</span></p><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">-&nbsp;입력 받을 정수의 개수와 이에 해당하는 개수만큼의 정수를 입력 받아 이를 역순으로 출력하는 프로그램을 작성하시오. 단 입력 받은 정수를 저장하는 과정에서 동적 메모리 할당 및 해제 함수인 malloc()과 free() 함수를 사용하시오.</span></p><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">Submit your source code.&nbsp;&nbsp;</span><br></p></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="40" cols="60">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;assert.h&gt;
+
+int main(){
+	int n,i;
+	int *b;
+	printf(&quot;n 값 : &quot;);
+	scanf(&quot;%d&quot;,&amp;n);
+	b = malloc(sizeof(int)*n);
+
+	assert(b);
+	
+	for(i=0;i&lt;n;i++){
+		scanf(&quot;%d&quot;,b+i);	
+	}
+	for(i=n-1;i&gt;=0;i--){
+		printf(&quot;%d &quot;,b[i]);	
+	}
+	free(b);
+	
+	return 0;
+}</textarea></div><div class="attachments"></div></div></div></div></div><div id="q6" class="que essay manualgraded complete"><div class="info"><h3 class="no">문제 <span class="qno">6</span></h3><div class="state">풀이 완료</div><div class="grade">총 15.00 점에서 15.00 점 할당</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:6_:flagged" value="0" /><input type="checkbox" id="q270328:6_:flaggedcheckbox" name="q270328:6_:flagged" value="1" /><input type="hidden" value="qaid=1702044&amp;qubaid=270328&amp;qid=279142&amp;slot=6&amp;checksum=cc913847647f8151f6ef130db2ccac83&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:6_:flaggedlabel" for="q270328:6_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:6_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:6_:sequencecheck" value="4" /><div class="qtext"><p>A palindromic number or numeral palindrome is a number that remains the same when its digits are reversed. Like 16461, for example, it is "symmetrical".<br></p><p>Complete the source code below determining whether a positive integer input by the user is a palindromic number or not by making your own is_palindromic_number() function.</p><p><br></p>
+
+<pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;">#include &lt;stdio.h&gt; 
+int is_palindromic_number(<b style="color:rgb(0,0,255);font-family:Consolas;">[1]</b>)
+{
+    <b style="color:rgb(0,0,255);font-family:Consolas;">// Enter your code</b>
+}
+
+int main(void)
+{
+    unsigned int n;
+	
+    printf("Enter a positive integer : ");
+    scanf("%u",&amp;n);
+	
+    if (is_palindromic_number(n))
+	printf("is a palindromic number\n");
+    else 
+ 	printf("is not a palindromic number\n");
+
+    return 0;
+}
+</pre></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="40" cols="60">#include &lt;stdio.h&gt; 
+int is_palindromic_number(unsigned int n)
+{
+    unsigned int reverse_n=0;
+    unsigned int i;
+    for(i=n;i!=0;i=i/10){
+    	reverse_n = reverse_n*10;
+		reverse_n += i%10;
+	}
+	if(reverse_n==n){
+		return 1;
+	}
+	return 0;
+}
+
+int main(void)
+{
+    unsigned int n;
+	
+    printf(&quot;Enter a positive integer : &quot;);
+    scanf(&quot;%u&quot;,&amp;n);
+	
+    if (is_palindromic_number(n))
+	printf(&quot;is a palindromic number\n&quot;);
+    else 
+ 	printf(&quot;is not a palindromic number\n&quot;);
+
+    return 0;
+}
+</textarea></div><div class="attachments"></div></div></div></div></div><div id="q7" class="que essay manualgraded notanswered"><div class="info"><h3 class="no">문제 <span class="qno">7</span></h3><div class="state">답하지 않음</div><div class="grade">총 15.00 점</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q270328:7_:flagged" value="0" /><input type="checkbox" id="q270328:7_:flaggedcheckbox" name="q270328:7_:flagged" value="1" /><input type="hidden" value="qaid=1702045&amp;qubaid=270328&amp;qid=279143&amp;slot=7&amp;checksum=21d7bbc49d51c7b94dd88f71988b42ed&amp;sesskey=8NIasaD7Fe&amp;newstate=" class="questionflagpostdata" /><label id="q270328:7_:flaggedlabel" for="q270328:7_:flaggedcheckbox"><img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/core/1567140730/i/unflagged" alt="기표되지 않음" id="q270328:7_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">문제 내용</h4><input type="hidden" name="q270328:7_:sequencecheck" value="2" /><div class="qtext"><p>Complete hexa2decimal() in the source code below to get the following execution result.</p><p>The hexa2decimal() return a decimal integer value corresponding to a hexa string given by the parameter "phexa".</p><p>You can safely assume that all hexa string starts with "0x" and only 0~9 and A~F (Capital/Upper) characters are used.&nbsp;</p><p><span style="font-family: NanumGothic, 나눔고딕, NanumGothic, 돋움, dotum, Helvetica, sans-serif, AppleGothic;">Submit your hexa2decimal().</span><br></p>
+<p>
+</p><table>
+<thead>
+<tr>
+<th scope="col">Execution Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="font-family:Consolas;">
+0x1F34 = 7988<br>
+0x34CD56 = 3460438
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>
+</p><pre style="border: 1px solid black; background-color:rgb(245,245,245); font-size:11.0pt;font-family:Consolas;">#include &lt;stdio.h&gt; 
+int hexa2decimal(char *phexa) {
+	 <b style="color:rgb(0,0,255);font-family:Consolas;">// Enter your code</b>
+}
+int main(void) {
+	char hexa1[] = "0x1F34";
+	char hexa2[] = "0x34CD56";
+
+	printf("%s = %d\n", hexa1, hexa2decimal(hexa1));
+	printf("%s = %d\n", hexa2, hexa2decimal(hexa2));
+
+	return 0;
+}
+</pre>
+<p></p></div><div class="ablock"><div class="answer"><textarea readonly="readonly" class="qtype_essay_monospaced qtype_essay_response" rows="30" cols="60"></textarea></div><div class="attachments"></div></div></div></div></div><input type="hidden" name="sesskey" value="8NIasaD7Fe" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton" name="savingflags" value="표식 상태 저장" /></div></div></form><div class="submitbtns"><a href="http://plms.pusan.ac.kr/mod/quiz/view.php?id=226528">검토 완료</a></div></div>				            
+			            </div>
+		            </div>
+				</div>
+								<div class="coursemos-course-menu-expand">
+					<button type="button" class="nobtn btn-course-menu btn-course-menu-open"></button>
+					<button type="button" class="nobtn btn-course-menu btn-course-menu-close"></button>
+				</div>
+							</div>
+		</div>
+		
+		<div id="page-footer">
+			<ul class="footer-menus pull-left">
+		<li><a href="http://pusan.ac.kr/uPNU_homepage/kr/sub/sub.asp?menu_no=10019903" target="_blank" class="privacy_policy">개인정보처리방침</a></li>
+</ul>
+<!-- 
+<div class="helpdesk">
+	<a href="#" class="nobtn">도움말</a>
+</div>
+-->
+<div class="address">
+	(46241) 부산광역시 금정구 부산대학로63번길 2 (장전동) 부산대학교 <span class="tell">Tel : 051-510-3843</span> <span class="tell">Fax : 051-510-3553</span> <span class="tell"><a href="mailto:plms@pusan.ac.kr">plms@pusan.ac.kr</a></span> <br/>
+	<p class="copyright">
+		COPYRIGHTⒸ Pusan National University	</p>
+</div>
+<div id="back-top">
+	<a href="#top"><span></span></a>
+</div>
+<div id="ajax_loading_submit">&nbsp;</div>
+<div id="ajax_loading_container">
+	<div id="ajax_loading_submit_img">
+		<img src="http://plms.pusan.ac.kr/theme/image.php/coursemosv2/theme_coursemosv2/1567140730/ajax-loader" alt="loading..." /> Loading...
+	</div>
+	<div id="ajax_loading_message">
+		<p class="save_msg">데이터를 저장하고 있습니다. 잠시만 기다려주십시오.</p>
+		<p class="refresh_msg">장시간 페이지 로딩 중이면 새로고침(F5) 해주시기 바랍니다.</p>
+	</div>
+</div>	
+		</div>
+	</div>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38985636-10', 'pusan.ac.kr');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://plms.pusan.ac.kr/lib/requirejs.php/1567140730/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+
+    paths: {
+        jquery: 'http://plms.pusan.ac.kr/lib/javascript.php/1567140730/lib/jquery/jquery-1.11.2.min',
+        jqueryui: 'http://plms.pusan.ac.kr/lib/javascript.php/1567140730/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'http://plms.pusan.ac.kr/lib/javascript.php/1567140730/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/lib/javascript.php/1567140730/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/plms.pusan.ac.kr\/lib\/javascript.php\/1567140730\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript" src="http://plms.pusan.ac.kr/theme/javascript.php/coursemosv2/1567140730/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\ucd5c\uc885 \uc218\uc815 \uc77c\uc2dc","name":"\uc81c\ubaa9","error":"\uc624\ub958","info":"\uc815\ubcf4","cancel":"\ucde8\uc18c","changesmadereallygoaway":"\ubcc0\uacbd \uc0ac\ud56d\uc774 \uc788\uc2b5\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \uc9c0\uc6b0\uc2dc\uaca0\uc2b5\ub2c8\uae4c?","morehelp":"\ub3c4\uc6c0\uae00 \ub354","loadinghelp":"\ub85c\ub529 \uc911 ...","yes":"\uc608","confirm":"\ud655\uc778","no":"\uc544\ub2c8\uc624","areyousure":"\uacc4\uc18d\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?","closebuttontitle":"\ub2eb\uae30","unknownerror":"\uc54c \uc218 \uc5c6\ub294 \uc624\ub958"},"repository":{"type":"\uc720\ud615","size":"\ud06c\uae30","invalidjson":"\uc798\ubabb\ub41c JSON \ubb38\uc790\uc5f4","nofilesattached":"\ucca8\ubd80\ubb3c \uc5c6\uc74c","filepicker":"\ud30c\uc77c \uc120\ud0dd\ub3c4\uad6c","logout":"\ub098\uac00\uae30","nofilesavailable":"\uc4f8 \uc218 \uc788\ub294 \ud30c\uc77c\uc774 \uc5c6\uc74c","norepositoriesavailable":"\uc8c4\uc1a1\ud569\ub2c8\ub2e4. \ud604\uc7ac \uc800\uc7a5\uc18c\uc911\uc5d0\uc11c \ud544\uc694\ud55c \ud3ec\ub9f7\uc73c\ub85c \ud30c\uc77c\uc744 \ubcf4\ub0b4\uc8fc\ub294 \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4.","fileexistsdialogheader":"\ud30c\uc77c\uc774 \uc874\uc7ac\ud569\ub2c8\ub2e4.","fileexistsdialog_editor":"\uac19\uc740 \uc774\ub984\uc758 \ud30c\uc77c\uc774 \ud3b8\uc9d1\ud558\uace0 \uc788\ub294 \ubb38\uc7a5\uc5d0 \uc774\ubbf8 \ucca8\ubd80\ub418\uc5c8\uc2b5\ub2c8\ub2e4.","fileexistsdialog_filemanager":"\uac19\uc740 \uc774\ub984\uc758 \ud30c\uc77c\uc774 \uc774\ubbf8 \ucca8\ubd80\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.","renameto":"\"{$a}\"\ub85c \uc774\ub984 \ubcc0\uacbd","referencesexist":"\uc774\ud30c\uc77c\uc744 \uc18c\uc2a4\ub85c \uc0ac\uc6a9\ud558\ub294 {$a} \ubcc4\uce6d \/ \ubc14\ub85c\uac00\uae30 \ud30c\uc77c\uc774 \uc788\uc2b5\ub2c8\ub2e4.","select":"\uc120\ud0dd"},"question":{"flagged":"\uae30\ud45c\ub428"},"quiz":{"functiondisabledbysecuremode":"\ud604\uc7ac  \uc0ac\uc6a9\ud560 \uc218 \uc5c6\ub294 \uae30\ub2a5\uc785\ub2c8\ub2e4.","startattempt":"\uc751\uc2dc\ud558\uae30","timesup":"\uc885\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4."},"admin":{"confirmation":"\ud655\uc778"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+ M.util.js_pending('random5de8ae70be27c1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "http:\/\/plms.pusan.ac.kr\/question\/toggleflag.php", [{"src":"http:\/\/plms.pusan.ac.kr\/theme\/image.php\/coursemosv2\/core\/1567140730\/i\/unflagged","title":"\ubcf8 \ubb38\uc81c\ub97c \ud45c\uc2dc\ud558\ub824\uba74 \ud074\ub9ad","alt":"\uae30\ud45c\ub418\uc9c0 \uc54a\uc74c"},{"src":"http:\/\/plms.pusan.ac.kr\/theme\/image.php\/coursemosv2\/core\/1567140730\/i\/flagged","title":"\ubcf8 \ubb38\uc81c \ud45c\uc2dc\ub97c \ud574\uc81c\ud558\ub824\uba74 \ud074\ub9ad","alt":"\uae30\ud45c\ub428"}], ["\ubb38\uc81c \ud45c\uc2dc","\ubb38\uc81c \ud45c\uc2dc \ud574\uc81c"]);  M.util.js_complete('random5de8ae70be27c1'); });
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"ko"});
+});
+ M.util.js_pending('random5de8ae70be27c2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5de8ae70be27c2'); });
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5de8ae70be27c4'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5de8ae70be27c4'); });
+ M.util.js_pending('random5de8ae70be27c5'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5de8ae70be27c5'); });
+
+});
+//]]>
+</script>
+</body>
+</html>
